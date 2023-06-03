@@ -1,18 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import styled from "@emotion/styled";
-import { useNavigate } from "react-router-dom";
+import { CalList } from "../components/CalList";
+import FlameImg from "../imgs/younghwan.png";
 
 export function Main(): JSX.Element {
-  const navigate = useNavigate();
   return (
     <MainContainer>
-      <h2
-        onClick={() => {
-          navigate("/reborn_flame");
-        }}
-      >
-        환생의 불꽃
-      </h2>
+      <CalList title="환생의 불꽃" to="/reborn_flame" src={FlameImg} />
     </MainContainer>
   );
 }

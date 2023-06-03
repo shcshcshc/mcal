@@ -10,8 +10,8 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="reborn_flame" element={<RebornFlame />} />
+        <Route path="/mcal" element={<Main />} />
+        <Route path="/reborn_flame" element={<RebornFlame />} />
       </Routes>
     </BrowserRouter>
   );
