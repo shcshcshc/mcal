@@ -16,6 +16,7 @@ export function CalList(props: {
         display: inline-flex;
         padding: 10px 10px 10px 10px;
         border: 1px solid black;
+        cursor: pointer;
       `}
       onClick={() => {
         navigate(to);

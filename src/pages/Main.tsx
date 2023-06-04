@@ -13,8 +13,4 @@ export function Main(): JSX.Element {
 
 const MainContainer = styled.div`
   margin-left: 20px;
-  h2 {
-    cursor: pointer;
-    margin-top: 20px;
-  }
 `;
