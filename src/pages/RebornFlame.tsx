@@ -257,9 +257,10 @@ export function RebornFlame(): JSX.Element {
 
   return (
     <RebornFlameContainer>
-      <h2>
-        환생의 불꽃 기대값 계산기 <span>(보스 장비만 지원합니다.)</span>
-      </h2>
+      <Header>
+        <h2>환생의 불꽃 기대값 계산기&nbsp;</h2>
+        <span>(보스 장비만 지원합니다.)</span>
+      </Header>
       <FormWrapper>
         <FormContainer>
           <form onSubmit={handleSubmit}>
@@ -271,6 +272,8 @@ export function RebornFlame(): JSX.Element {
                 defaultValue="200"
                 required
                 step="1"
+                min="130"
+                max="250"
               />
             </label>
             <div>주스텟 환산값을 입력해주세요.</div>
@@ -398,20 +401,32 @@ const ResultContainer = styled.div`
   margin-top: 5px;
 `;
 
-const FormContainer = styled.div``;
+const FormContainer = styled.div`
+  margin-bottom: 20px;
+`;
 
 const FormWrapper = styled.div`
   display: flex;
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
+const Header = styled.div`
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+  h2 {
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const RebornFlameContainer = styled.div`
   margin-left: 20px;
-  h2 {
-    display: inline-block;
-    span {
-      font-size: 0.7em;
-    }
-  }
+  margin-right: 20px;
   form {
     width: 400px;
     margin-right: 20px;
