@@ -15,6 +15,7 @@ export function CalList(props: {
       css={css`
         display: inline-flex;
         padding: 10px 10px 10px 10px;
+        margin-right: 20px;
         border: 1px solid black;
         cursor: pointer;
       `}

@@ -4,6 +4,7 @@ import "./App.css";
 import { Main } from "./pages/Main";
 import { RebornFlame } from "./pages/RebornFlame";
 import { Header } from "./components/Header";
+import { Cube } from "./pages/Cube";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/mcal" element={<Main />} />
         <Route path="/reborn_flame" element={<RebornFlame />} />
+        <Route path="/cube" element={<Cube />} />
       </Routes>
     </BrowserRouter>
   );
