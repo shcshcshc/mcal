@@ -1,6 +1,23 @@
-import { WeaponOptionType } from "./OptionType";
+import { optionType } from "./OptionType";
 
-export const Weapon: WeaponOptionType[] = [
+export const WeaponOption = [
+  "none",
+  "str",
+  "dex",
+  "int",
+  "luk",
+  "gongper",
+  "maper",
+  "criprob",
+  "damage",
+  "allstat",
+  "gong",
+  "ma",
+  "ignoredef",
+  "bossdamage",
+];
+
+export const Weapon: optionType[] = [
   { type: "red", order: "first", name: "str", value: 12, prob: 0.097561 },
   { type: "red", order: "first", name: "dex", value: 12, prob: 0.097561 },
   { type: "red", order: "first", name: "int", value: 12, prob: 0.097561 },
